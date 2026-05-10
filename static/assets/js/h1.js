@@ -172,7 +172,7 @@ const SplashT = [
   "Made by xBubbo",
   "Check out discord.gg/interstellar :)",
   "Thanks for using the site",
-  "Follow us on Tiktok (@useinterstellar)",
+  "Follow us on Tiktok (@nuclearjs)",
   "Subscribe to us on YouTube (@unblocking)",
   "Subscribe to my Youtube (@xbubbo)",
   "Check out the settings page",

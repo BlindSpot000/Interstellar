@@ -14,7 +14,7 @@ Only current versions of the site are being updated, if you are using an older v
 
 ## Reporting a Vulnerability
 
-You can privately report a vulnerability [here](https://github.com/InterstellarNetwork/Interstellar/security/advisories/new).
+You can privately report a vulnerability [here](https://github.com/InterstellarNetwork/NUCLEAR.JS/security/advisories/new).
 
 Alternatively, you can join our [Discord server](https://discord.gg/Interstellar), and open a ticket and let us know what the vulnerability is.
 
@@ -27,7 +27,7 @@ If you are using an older version of the site, we strongly recommend upgrading t
 If you have a fork of the repository:
 Then [sync your fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
 
-If you have interstellar installed locally:
+If you have NUCLEAR.JS installed locally:
 Run `git pull`, and `npm i`.
 
 By keeping your site up to date, you not only enjoy the latest features but also enhance the security of your experience.
