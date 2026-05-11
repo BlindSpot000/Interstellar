@@ -4,27 +4,27 @@
 :root {
    /* Background Variables */
    --background-image: url("/./assets/media/background/full-main.png"); /* Background Image */
-   --backdrop-filter: blur(10px) brightness(80%); /* Nav Backdrop filter */
-   --background-nav: rgba(255, 255, 255, 0.02); /* Nav Background */
-   --background-color: #222; /* Main Background Color */
-   --background-input: #4545459e; /* Input Field Background Color */
-   --background-column: #353535; /* Background for Apps Container */
-   --background-settings: #2a2a2a; /* Settings Card Background */
-   --background-buttons: #333; /* Button Background Color */
-   --tab-active-background: #444; /* Accent Color for Tabs */
+   --backdrop-filter: blur(10px) brightness(60%); /* Nav Backdrop filter */
+   --background-nav: rgba(0, 255, 0, 0.03); /* Nav Background */
+   --background-color: #0a0a0a; /* Main Background Color */
+   --background-input: #1a3a1a9e; /* Input Field Background Color */
+   --background-column: #0f2a0f; /* Background for Apps Container */
+   --background-settings: #0d1f0d; /* Settings Card Background */
+   --background-buttons: #1a3a1a; /* Button Background Color */
+   --tab-active-background: #1a4d1a; /* Accent Color for Tabs */
    --tab-inactive-background: ; /* Background Color for Tabs Not In Use */
-   --slider-active-background: #4caf50; /* Active Slider Background Color */
-   --slider-inactive-background: #ccc; /*  Slider Background Color */
+   --slider-active-background: #00ff41; /* Active Slider Background Color */
+   --slider-inactive-background: #1a3a1a; /*  Slider Background Color */
    --nav-image: url("/./assets/media/favicon/main.png"); /* Nav Logo */
    /* Text Variables */
-   --text-primary: #fff; /* Primary Text Color */
-   --text-dark: #555; /* Dark Text Color for Error Page, Scrollbar, and Particles */
-   --text-placeholder: #aaa; /* Placeholder Text Color */
+   --text-primary: #00ff41; /* Primary Text Color */
+   --text-dark: #00aa22; /* Dark Text Color for Error Page, Scrollbar, and Particles */
+   --text-placeholder: #00cc33; /* Placeholder Text Color */
    /* Other Variables */
-   --save-button: #4caf50; /* Save Button, Typically Green */
-   --reset-button: #f44336; /* Reset Button, Typically Red */
-   --import-button: #009688; /* Import Button, Typically Teal */
-   --export-button: #ea76cb; /* Export Button, Typically Pink */
+   --save-button: #00ff41; /* Save Button, Typically Green */
+   --reset-button: #ff1744; /* Reset Button, Typically Red */
+   --import-button: #00d084; /* Import Button, Typically Teal */
+   --export-button: #00ff41; /* Export Button, Typically Pink */
 }
 
 ::-webkit-scrollbar {
@@ -51,12 +51,13 @@
 body {
    font-family: "Inter", sans-serif;
    text-decoration: none;
-   background: var(--background-image);
+   background: linear-gradient(135deg, #0a0a0a 0%, #0f2a0f 50%, #0a0a0a 100%);
    height: 100%;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
+   position: relative;
 }
 
 ::placeholder {
@@ -75,4 +76,52 @@ body {
    top: 0%;
    position: absolute;
    z-index: 99;
+}
+
+/* Nuclear Theme Glow Effects */
+#particles-js {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+}
+
+.title {
+   text-shadow: 0 0 10px #00ff41, 0 0 20px #00aa22, 0 0 40px #00ff41;
+   color: var(--text-primary);
+   animation: nuclear-glow 3s ease-in-out infinite;
+}
+
+@keyframes nuclear-glow {
+   0%, 100% {
+      text-shadow: 0 0 10px #00ff41, 0 0 20px #00aa22, 0 0 40px #00ff41;
+   }
+   50% {
+      text-shadow: 0 0 15px #00ff41, 0 0 30px #00aa22, 0 0 50px #00ff41, 0 0 70px #00dd33;
+   }
+}
+
+input, button, .search-container input {
+   background-color: var(--background-input) !important;
+   border: 1px solid var(--text-primary) !important;
+   color: var(--text-primary) !important;
+   box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+   transition: all 0.3s ease;
+}
+
+input:focus, button:focus, .search-container input:focus {
+   box-shadow: 0 0 20px rgba(0, 255, 65, 0.5) !important;
+   border-color: var(--text-primary) !important;
+}
+
+button:hover {
+   background-color: var(--background-buttons) !important;
+   box-shadow: 0 0 15px rgba(0, 255, 65, 0.4) !important;
+}
+
+/* Nuclear particle glow canvas */
+canvas {
+   filter: drop-shadow(0 0 20px rgba(0, 255, 65, 0.1));
 }

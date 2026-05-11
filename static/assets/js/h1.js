@@ -55,14 +55,14 @@ document.addEventListener("DOMContentLoaded", event => {
     const particlesConfig = {
       particles: {
         number: {
-          value: 200,
+          value: 350,
           density: {
             enable: true,
-            value_area: 600,
+            value_area: 400,
           },
         },
         color: {
-          value: "#ffffff",
+          value: "#00ff41",
         },
         shape: {
           type: "circle",
@@ -80,44 +80,44 @@ document.addEventListener("DOMContentLoaded", event => {
           },
         },
         opacity: {
-          value: 1,
+          value: 0.8,
           random: true,
           anim: {
-            enable: false,
-            speed: 1,
-            opacity_min: 0.1,
+            enable: true,
+            speed: 1.5,
+            opacity_min: 0.3,
             sync: false,
           },
         },
         size: {
-          value: 3,
+          value: 4,
           random: true,
           anim: {
-            enable: false,
-            speed: 40,
-            size_min: 0.1,
+            enable: true,
+            speed: 3,
+            size_min: 1,
             sync: false,
           },
         },
         line_linked: {
-          enable: false,
+          enable: true,
           distance: 150,
-          color: "#ffffff",
-          opacity: 0.4,
+          color: "#00ff41",
+          opacity: 0.3,
           width: 1,
         },
         move: {
           enable: true,
-          speed: 2,
-          direction: "bottom",
+          speed: 1.5,
+          direction: "none",
           random: true,
           straight: false,
           out_mode: "out",
           bounce: false,
           attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200,
+            enable: true,
+            rotateX: 300,
+            rotateY: 600,
           },
         },
       },
@@ -169,14 +169,12 @@ document.addEventListener("DOMContentLoaded", event => {
 const SplashT = [
   "Over 8 Million Users since 2023",
   "Fastest growing proxy server",
-  "Made by xBubbo",
-  "Check out discord.gg/interstellar :)",
+  "Made by ΛLΞXΔNDΞR",
+  "Check out https://discord.gg/ANVNb5TK5F",
   "Thanks for using the site",
-  "Follow us on Tiktok (@nuclearjs)",
-  "Subscribe to us on YouTube (@unblocking)",
-  "Subscribe to my Youtube (@xbubbo)",
+  "Follow us on Tiktok (@nblindspot_studios)",
   "Check out the settings page",
-  "Check out our Patreon (https://www.patreon.com/gointerstellar)",
+  "patreon coming soon",
 ];
 
 let SplashI = Math.floor(Math.random() * SplashT.length);
